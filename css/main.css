@@ -1,0 +1,170 @@
+/* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/inter-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-600 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/inter-v11-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v11-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/inter-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter","Arial", sans-serif;
+    font-weight: 400;
+    font-weight: 600;
+    font-weight: 700;
+    background-color: #E7E7E7;;
+}
+.container {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.big-box {
+    margin-top: 100px;  
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.left-box {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 570px;
+    height: 500px;
+    padding: 60px 180px 0px 90px;
+    background-image: url("../images/rectangle.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border-radius: 20px; */
+    border-radius: 20px 20px 0 0;
+}
+.left-span-h2-p{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.left-box-top-word {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2px 5px;
+    border: 10px;
+    border-radius: 4px solid lightgray;
+}
+.form-elements{
+    display: flex;
+    flex-direction: column;
+}
+.left-h2 {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 46px;
+    color: #FFFFFF; 
+}
+.left-p {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.left-box-button {
+    width: 570px;
+    margin-left: 90px;
+    margin-top: 90px;
+    padding: 29px 145px;
+    background-color: #4DC490;
+    border-radius: 0px 0px 20px 20px;
+}
+.right-box {
+    width: 570px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.right-h2{
+    margin-bottom: 40px;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 42px;
+    color: #000000;
+}
+.input-name {
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    padding-right: 150px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    border: 0px;
+    border-bottom: 1px solid #000000;
+}
+.wrong-word{
+    margin-top: 5px;
+    /* margin-bottom: 10px; */
+    float: right;
+    opacity: 0;
+}
+.input-name:not(:placeholder-shown):not(:focus):invalid ~ .wrong-word{
+    position: right center;
+    opacity: 0.9;
+    color: red;
+}
+.input-name:not(:placeholder-shown):not(:focus):invalid{
+    border-bottom: 1px solid red;
+}
+.input-button {
+    /* margin-top: 35px; */
+    padding: 20px 130px;
+    background-color: #655AF2;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: 0px;
+}
+.input-button:hover{
+    cursor:pointer;
+}
+.right-p-left {
+    font-size: 11px;
+    line-height: 15px;
+    color: #555555;
+}
+.right-p-right {
+    font-size: 11px;
+    line-height: 15px;
+    color: #f75252;
+    text-decoration: none;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
